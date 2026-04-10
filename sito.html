@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fassina Rent | Stock B2B per Commercianti</title>
+    <style>
+        :root {
+            --primary-lime: #c5e139; /* Il verde lime del tuo logo */
+            --dark-grey: #2d2d2d;
+            --light-grey: #f4f4f4;
+            --blueprint-bg: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            color: var(--dark-grey);
+            background-color: var(--light-grey);
+        }
+
+        header {
+            background: white;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid var(--primary-lime);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), 
+                        url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1500'); /* Placeholder per sfondo tecnico */
+            background-size: cover;
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .hero span {
+            color: #8fb000; /* Versione scura del lime per leggibilità */
+        }
+
+        .btn-primary {
+            background-color: var(--primary-lime);
+            color: var(--dark-grey);
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--dark-grey);
+            color: white;
+        }
+
+        .container {
+            padding: 50px 5%;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        .spec-tag {
+            background: var(--light-grey);
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+        }
+
+        footer {
+            background: var(--dark-grey);
+            color: white;
+            padding: 40px 5%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size: 24px; font-weight: bold;">FASSINA <span style="color: var(--primary-lime)">RENT</span></div>
+    <nav>
+        <a href="#stock" style="margin-right: 20px; text-decoration: none; color: black;">Stock</a>
+        <a href="#contatti" class="btn-primary">Area Commercianti</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Soluzioni <span>B2B</span> per Professionisti</h1>
+    <p>Accesso esclusivo a stock selezionati, perizie tecniche certificate e logistica integrata.</p><br>
+    <a href="#stock" class="btn-primary">VEDI STOCK ATTUALE</a>
+</section>
+
+<div class="container" id="stock">
+    <h2>Ultimi Arrivi Stock Commercianti</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=400" alt="Auto">
+            <h3>BMW Serie 3 Touring</h3>
+            <p>
+                <span class="spec-tag">2022</span>
+                <span class="spec-tag">45.000 Km</span>
+                <span class="spec-tag">Diesel</span>
+            </p>
+            <p>Prezzo Dealer: <strong>Contattaci</strong></p>
+            <a href="#" style="color: var(--primary-lime); font-weight: bold;">Vedi Perizia PDF →</a>
+        </div>
+        
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1617469767053-d3b523a0b982?auto=format&fit=crop&q=80&w=400" alt="Auto">
+            <h3>Audi A4 Avant</h3>
+            <p>
+                <span class="spec-tag">2021</span>
+                <span class="spec-tag">62.000 Km</span>
+                <span class="spec-tag">Ibrida</span>
+            </p>
+            <p>Prezzo Dealer: <strong>Contattaci</strong></p>
+            <a href="#" style="color: var(--primary-lime); font-weight: bold;">Vedi Perizia PDF →</a>
+        </div>
+    </div>
+</div>
+
+<section id="contatti" style="background: #eee; padding: 60px 5%; text-align: center;">
+    <h2>Sei un commerciante?</h2>
+    <p>Registrati per ricevere la nostra lista stock settimanale via WhatsApp o Email.</p>
+    <form style="max-width: 500px; margin: 0 auto;">
+        <input type="text" placeholder="Ragione Sociale" style="width: 100%; padding: 10px; margin-bottom: 10px;">
+        <input type="email" placeholder="Email Aziendale" style="width: 100%; padding: 10px; margin-bottom: 10px;">
+        <button type="submit" class="btn-primary" style="width: 106%; border: none; cursor: pointer;">RICHIEDI ACCESSO</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 Fassina Rent - Vendita Commercianti Automobili. Tutti i diritti riservati.</p>
+</footer>
+
+</body>
+</html>
